@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on sktometometo Technical Blog</title>
+    <link>https://www.sktometometo.com/posts/</link>
+    <description>Recent content in Posts on sktometometo Technical Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Fri, 11 Oct 2019 11:07:36 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.sktometometo.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fusion360において支配的なCPU性能について</title>
+      <link>https://www.sktometometo.com/posts/fusion360-thread/</link>
+      <pubDate>Fri, 11 Oct 2019 11:07:36 +0900</pubDate>
+      
+      <guid>https://www.sktometometo.com/posts/fusion360-thread/</guid>
+      <description>Fusion360は並列計算性能よりシングルコア性能の方が効くって話を聞いて,各スレッドのCPU使用度合を計測してみた.
+ 実験条件   OS : Windows 10
+  CPU : i5-9600K
+  Chipset : Z390
+  GPU : GTX970
+  version of Fusion360 : 2.0.6516
+     実験方法 以下のpythonスクリプトを実行することで,Fusion360のプロセスIDをもつスレッドのプロセス時間を取得し,グラフにする. グラフは各曲線がある一つのスレッドに対応.
+   実験 Fusion360を実行し,特定のデザインを開いている状態で,上記のスクリプトを実行する.
+ 面のオフセット 曲面をオフセットさせる操作を行う.
+ 
+ 
+  ミラー ソリッドモデルを含むコンポーネントをミラーさせる操作を行う.
+ 
+ 
+  レンダリング レンダリングを行う.
+ 
+ 
+    結論   ボディやサーフェスの編集には並列計算性能効かなさそう.</description>
+    </item>
+    
+  </channel>
+</rss>
